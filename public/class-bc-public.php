@@ -130,8 +130,6 @@ class BC_Public {
 			${str_replace( 'bc_', '', $option )} = get_option( $option, $default );
 		}
 
-		echo var_dump( get_field( 'percentage', $atts['id'] ) );
-
 		$bonusData = array(
 			'percentage' => get_field( 'percentage', $atts['id'] ),
 			'wager' => get_field( 'wager', $atts['id'] ),
